@@ -1,0 +1,27 @@
+<div class="loginContainer">
+    <p id="loginContainerHeading">Register</p>
+    <form action="/users/register/student/" method="post">
+        {% csrf_token %}
+        
+        {{ userGroup }} Username:<br>
+        {{ form.username }}
+        <br><br>
+        {{ userGroup }} Email:<br>
+        {{ form.email }}
+        <br><br>
+        Password:<br>
+        {{ form.password1 }}
+        <br><br>
+        Re-enter Password:<br>
+        {{ form.password2 }}
+        <br><br>
+        <button type="submit" class="button">Submit</button>
+
+        {{ form.errors }}
+
+        <!-- {{ form }}
+        <button type="submit" class="button">Submit</button> -->
+
+        <p>Already Registerd? <a href="/users/login/">Login here</a></p>
+    </form>
+</div>

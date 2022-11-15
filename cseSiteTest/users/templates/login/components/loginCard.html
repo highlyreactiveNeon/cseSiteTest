@@ -1,0 +1,16 @@
+<div class="loginContainer">
+    <p id="loginContainerHeading">Login</p>
+    <form action="/users/login/student/" method="POST">
+        {% csrf_token %}
+        {{ userGroup }} Username:<br>
+        <input name="username" type="text" class="input">
+        <br><br>
+        Password:<br>
+        <input name="password" type="password" class="input">
+        <br><br>
+        <button type="submit" class="button">Submit</button>
+        <br><br>
+        <p>Forgot password? <a href="/users/reset_password/">click here</a></p>
+        <p>Didn't register? <a href="/users/register/">Register here</a></p>
+    </form>
+</div>

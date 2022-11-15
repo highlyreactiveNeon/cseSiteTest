@@ -1,0 +1,19 @@
+{% extends 'login/login.html' %}
+
+{% block mainContent %}
+
+{% include 'login/components/loginCard.html' with userGroup="Faculty" %}
+
+<style>
+    body {
+        background-image:
+            url('https://img.freepik.com/free-vector/professor-concept-illustration_114360-4226.jpg?w=826&t=st=1668320409~exp=1668321009~hmac=3349e4b414d10c12a12188ad651f1e40bf65933ac5a72ec928f69b1c8676eb4e'),
+            linear-gradient(to right, white, #f9fff5);
+        background-repeat: no-repeat, repeat;
+        background-position-x: left, left;
+        background-position-y: -100%, top;
+        background-size: 25%, auto;
+    }
+</style>
+
+{% endblock %}

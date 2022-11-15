@@ -1,0 +1,9 @@
+<div class="loginContainer">
+    <h1>Enter the email to reset your password</h1>
+    <form action="/users/reset_password/" method="POST">
+        {% csrf_token %}
+
+        <input type="email" name="email">
+        <button class="button">Submit</button>
+    </form>
+</div>

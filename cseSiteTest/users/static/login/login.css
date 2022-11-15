@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+*{
+    font-family: 'Comfortaa', cursive;
+}
+
+body {
+    text-align: center;
+}
+
+.topBar {
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#topBarHeading {
+    font-size: 2em;
+    margin-left: 5%;
+}
+
+#topBarLogo {
+    height: 100%;
+}
+
+.loginContainer {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: #f5f2ea;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* justify-content: center; */
+}
+
+#loginContainerHeading {
+    font-size: 1.5em;
+}
+
+.button {
+    background-color: #fdc886;  
+    border: none;
+    width: 100%;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f9fff5;
+    margin-top: 5px;
+    width: 30em;
+}

@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="{% static 'login/login.css' %}">
+
+    <body>
+        <div class="topBar">
+                <img 
+                    src="https://i.pinimg.com/originals/c8/8a/71/c88a71ba963bace6b5678d6dad6a991a.png" 
+                    alt="BMSCE_logo"
+                    id="topBarLogo"
+                >
+
+            <p id="topBarHeading">CSE App</p>
+        </div>
+
+        {% block mainContent %}
+        {% endblock %}
+    </body>
+</html>

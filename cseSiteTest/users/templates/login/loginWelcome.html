@@ -1,0 +1,25 @@
+{% extends 'login/login.html' %}
+
+{% block mainContent %}
+
+<div class="loginContainer">
+    <p id="loginContainerHeading">Welcome to the BMSCE CSE App</p>
+    <p>Select how you want to login to the app</p>
+    <a href="student/"><button class="button">Student Login</button></a>
+    <a href="faculty/"><button class="button">Faculty Login</button></a>
+</div>
+
+<style>
+    body {
+        background-image:
+            url('https://img.freepik.com/free-vector/professor-concept-illustration_114360-4226.jpg?w=826&t=st=1668320409~exp=1668321009~hmac=3349e4b414d10c12a12188ad651f1e40bf65933ac5a72ec928f69b1c8676eb4e'),
+            url('https://img.freepik.com/free-vector/happy-students-jumping-with-flat-design_23-2147907626.jpg?w=826&t=st=1668320098~exp=1668320698~hmac=472c1af2835e7434885291bc7e7f4b8ad0c5c77de668d2aac2e1174cba2df7fe'),
+            linear-gradient(to right, white, #f9fff5);
+        background-repeat: no-repeat, no-repeat, repeat;
+        background-position-x: left, right, left;
+        background-position-y: -100%, -90%, top;
+        background-size: 25%, 30%, auto;
+    }
+</style>
+
+{% endblock %}
